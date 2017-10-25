@@ -1,0 +1,33 @@
+### Headers settings
+company: none
+
+### Xcode project settings
+project_name: VIPERCards
+xcodeproj_path: /Users/dvdov/Documents/VIPERCards/VIPERCards/VIPERCards.xcodeproj
+prefix: VPR
+
+### Code generation settings section
+# The main project target name
+project_target: VIPERCards
+
+# The file path for new modules
+project_file_path: /Users/dvdov/Documents/VIPERCards/VIPERCards/VIPERCards
+
+# The Xcode group path to new modules
+project_group_path: /Users/dvdov/Documents/VIPERCards/VIPERCards/VIPERCards
+
+### Tests generation settings section
+# The tests target name
+test_target: VIPERCardsTests
+
+# The file path for new tests
+test_file_path: /Users/dvdov/Documents/VIPERCards/VIPERCards/VIPERCardsTests
+
+# The Xcode group path to new tests
+test_group_path: /Users/dvdov/Documents/VIPERCards/VIPERCards/VIPERCardsTests
+
+### Templates
+templates:
+- {name: rviper_controller}
+- {name: mvvm_controller}
+- {name: swifty_viper}
