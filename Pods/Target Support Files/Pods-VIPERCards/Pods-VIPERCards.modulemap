@@ -1,0 +1,6 @@
+framework module Pods_VIPERCards {
+  umbrella header "Pods-VIPERCards-umbrella.h"
+
+  export *
+  module * { export * }
+}
