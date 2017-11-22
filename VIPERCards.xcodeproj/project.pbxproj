@@ -7,17 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05FD96692A790C760AAE14EA /* VPRCardsListPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 913DB43766A78EA2F4BA5C87 /* VPRCardsListPresenterTests.m */; };
-		470D0EF12D74E1831C4B70F7 /* VPRCardsListInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A99260E48F647AE16533B3C9 /* VPRCardsListInteractorTests.m */; };
-		5A8B3CAC95F69AC95125A11C /* VPRCardsListViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A271BC02186AE3B85E4FDAA0 /* VPRCardsListViewControllerTests.m */; };
-		71F5DD4CDA8FF90B46C3681F /* VPRCardsListRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DD1264B7D46B41E0985A48 /* VPRCardsListRouterTests.m */; };
-		769CD9F3F2E8F66C4FBEAE33 /* VPRCardsListAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB0E37DEB1EF6F184D7B82 /* VPRCardsListAssemblyTests.m */; };
 		B6CA586DFA498896BDA3D7F8 /* Pods_VIPERCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6358B555595B85845B81BFE6 /* Pods_VIPERCards.framework */; };
 		FB51B4EE1FA1139E004089B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB51B4ED1FA1139E004089B5 /* main.m */; };
 		FB51B4F11FA1139E004089B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB51B4F01FA1139E004089B5 /* AppDelegate.m */; };
 		FB51B4F71FA1139E004089B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB51B4F51FA1139E004089B5 /* Main.storyboard */; };
 		FB51B4F91FA1139E004089B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB51B4F81FA1139E004089B5 /* Assets.xcassets */; };
 		FB51B4FC1FA1139E004089B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB51B4FA1FA1139E004089B5 /* LaunchScreen.storyboard */; };
+		FB93886A1FC60520006E2F65 /* PlaceSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9388691FC60520006E2F65 /* PlaceSearch.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,13 +29,7 @@
 /* Begin PBXFileReference section */
 		23BEF492060C08E609D89EB5 /* Pods-VIPERCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERCards.release.xcconfig"; path = "Pods/Target Support Files/Pods-VIPERCards/Pods-VIPERCards.release.xcconfig"; sourceTree = "<group>"; };
 		6358B555595B85845B81BFE6 /* Pods_VIPERCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPERCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		649A77770E4D4059983A6407 /* VPRCardsListAssembly_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VPRCardsListAssembly_Testable.h; path = "../../../../../../VIPERCardsTests/VIPERCardsTests/UseCases Tests/CardsList/Assembly/VPRCardsListAssembly_Testable.h"; sourceTree = "<group>"; };
-		6FCB0E37DEB1EF6F184D7B82 /* VPRCardsListAssemblyTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VPRCardsListAssemblyTests.m; path = "../../../../../../VIPERCardsTests/VIPERCardsTests/UseCases Tests/CardsList/Assembly/VPRCardsListAssemblyTests.m"; sourceTree = "<group>"; };
-		913DB43766A78EA2F4BA5C87 /* VPRCardsListPresenterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VPRCardsListPresenterTests.m; path = "../../../../../../VIPERCardsTests/VIPERCardsTests/UseCases Tests/CardsList/Presenter/VPRCardsListPresenterTests.m"; sourceTree = "<group>"; };
-		A271BC02186AE3B85E4FDAA0 /* VPRCardsListViewControllerTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VPRCardsListViewControllerTests.m; path = "../../../../../../VIPERCardsTests/VIPERCardsTests/UseCases Tests/CardsList/View/VPRCardsListViewControllerTests.m"; sourceTree = "<group>"; };
-		A99260E48F647AE16533B3C9 /* VPRCardsListInteractorTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VPRCardsListInteractorTests.m; path = "../../../../../../VIPERCardsTests/VIPERCardsTests/UseCases Tests/CardsList/Interactor/VPRCardsListInteractorTests.m"; sourceTree = "<group>"; };
 		B63CA82F50C6D71BFB3671FB /* Pods-VIPERCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERCards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPERCards/Pods-VIPERCards.debug.xcconfig"; sourceTree = "<group>"; };
-		D7DD1264B7D46B41E0985A48 /* VPRCardsListRouterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VPRCardsListRouterTests.m; path = "../../../../../../VIPERCardsTests/VIPERCardsTests/UseCases Tests/CardsList/Router/VPRCardsListRouterTests.m"; sourceTree = "<group>"; };
 		FB51B4E91FA1139E004089B5 /* VIPERCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB51B4ED1FA1139E004089B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB51B4EF1FA1139E004089B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,6 +40,29 @@
 		FB51B4FD1FA1139E004089B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB51B5021FA1139E004089B5 /* VIPERCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPERCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB51B5081FA1139E004089B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB9388461FC6046D006E2F65 /* PlaceSearchAssembly_Testable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceSearchAssembly_Testable.h; sourceTree = "<group>"; };
+		FB9388471FC6046D006E2F65 /* PlaceSearchAssemblyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceSearchAssemblyTests.m; sourceTree = "<group>"; };
+		FB9388491FC6046D006E2F65 /* PlaceSearchInteractorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceSearchInteractorTests.m; sourceTree = "<group>"; };
+		FB93884B1FC6046D006E2F65 /* PlaceSearchPresenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceSearchPresenterTests.m; sourceTree = "<group>"; };
+		FB93884D1FC6046D006E2F65 /* PlaceSearchRouterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceSearchRouterTests.m; sourceTree = "<group>"; };
+		FB93884F1FC6046D006E2F65 /* PlaceSearchViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceSearchViewControllerTests.m; sourceTree = "<group>"; };
+		FB9388521FC60489006E2F65 /* PlaceSearchAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceSearchAssembly.h; sourceTree = "<group>"; };
+		FB9388531FC60489006E2F65 /* PlaceSearchAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceSearchAssembly.m; sourceTree = "<group>"; };
+		FB9388551FC60489006E2F65 /* PlaceSearchInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceSearchInteractor.h; sourceTree = "<group>"; };
+		FB9388561FC60489006E2F65 /* PlaceSearchInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceSearchInteractor.m; sourceTree = "<group>"; };
+		FB9388571FC60489006E2F65 /* PlaceSearchInteractorInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceSearchInteractorInput.h; sourceTree = "<group>"; };
+		FB9388581FC60489006E2F65 /* PlaceSearchInteractorOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceSearchInteractorOutput.h; sourceTree = "<group>"; };
+		FB93885A1FC60489006E2F65 /* PlaceSearchModuleInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceSearchModuleInput.h; sourceTree = "<group>"; };
+		FB93885B1FC60489006E2F65 /* PlaceSearchPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceSearchPresenter.h; sourceTree = "<group>"; };
+		FB93885C1FC60489006E2F65 /* PlaceSearchPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceSearchPresenter.m; sourceTree = "<group>"; };
+		FB93885E1FC60489006E2F65 /* PlaceSearchRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceSearchRouter.h; sourceTree = "<group>"; };
+		FB93885F1FC60489006E2F65 /* PlaceSearchRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceSearchRouter.m; sourceTree = "<group>"; };
+		FB9388601FC60489006E2F65 /* PlaceSearchRouterInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceSearchRouterInput.h; sourceTree = "<group>"; };
+		FB9388621FC60489006E2F65 /* PlaceSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceSearchViewController.h; sourceTree = "<group>"; };
+		FB9388631FC60489006E2F65 /* PlaceSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceSearchViewController.m; sourceTree = "<group>"; };
+		FB9388641FC60489006E2F65 /* PlaceSearchViewInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceSearchViewInput.h; sourceTree = "<group>"; };
+		FB9388651FC60489006E2F65 /* PlaceSearchViewOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceSearchViewOutput.h; sourceTree = "<group>"; };
+		FB9388691FC60520006E2F65 /* PlaceSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlaceSearch.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,67 +84,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3F5919685923A3FC31D73665 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A271BC02186AE3B85E4FDAA0 /* VPRCardsListViewControllerTests.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		4C463BB9A6D94558773E160D /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				D7DD1264B7D46B41E0985A48 /* VPRCardsListRouterTests.m */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		73AF3E35ACFD5FE0DC30EC27 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				A99260E48F647AE16533B3C9 /* VPRCardsListInteractorTests.m */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		885EBA41EBC5BF135EDAF0F7 /* CardsList */ = {
-			isa = PBXGroup;
-			children = (
-				9F40368D75023F0DDAE820F5 /* Assembly */,
-				3F5919685923A3FC31D73665 /* View */,
-				984340B9B9112351855274C5 /* Presenter */,
-				73AF3E35ACFD5FE0DC30EC27 /* Interactor */,
-				4C463BB9A6D94558773E160D /* Router */,
-			);
-			path = CardsList;
-			sourceTree = "<group>";
-		};
-		89294988561D1AF726117989 /* VIPERCardsTests */ = {
-			isa = PBXGroup;
-			children = (
-				FC9AF5FE46DBEE7F1A76FDBA /* UseCases Tests */,
-			);
-			path = VIPERCardsTests;
-			sourceTree = "<group>";
-		};
-		984340B9B9112351855274C5 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				913DB43766A78EA2F4BA5C87 /* VPRCardsListPresenterTests.m */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		9F40368D75023F0DDAE820F5 /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				6FCB0E37DEB1EF6F184D7B82 /* VPRCardsListAssemblyTests.m */,
-				649A77770E4D4059983A6407 /* VPRCardsListAssembly_Testable.h */,
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
 		9FB58144BEB4E4BB7FCF3952 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,19 +148,10 @@
 		FB51B5051FA1139E004089B5 /* VIPERCardsTests */ = {
 			isa = PBXGroup;
 			children = (
-				FB51B5461FA1CF9C004089B5 /* UseCases Tests */,
+				FB9388431FC6021D006E2F65 /* UseCases */,
 				FB51B5081FA1139E004089B5 /* Info.plist */,
-				89294988561D1AF726117989 /* VIPERCardsTests */,
 			);
 			path = VIPERCardsTests;
-			sourceTree = "<group>";
-		};
-		FB51B5461FA1CF9C004089B5 /* UseCases Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "UseCases Tests";
-			path = "VIPERCardsTests/UseCases Tests";
 			sourceTree = "<group>";
 		};
 		FB51B5471FA1CFE5004089B5 /* Resources */ = {
@@ -261,16 +204,150 @@
 		FB9388421FC6013C006E2F65 /* Use cases */ = {
 			isa = PBXGroup;
 			children = (
+				FB9388501FC60489006E2F65 /* PlaceSearch */,
 			);
 			path = "Use cases";
 			sourceTree = "<group>";
 		};
-		FC9AF5FE46DBEE7F1A76FDBA /* UseCases Tests */ = {
+		FB9388431FC6021D006E2F65 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				885EBA41EBC5BF135EDAF0F7 /* CardsList */,
+				FB9388441FC6046D006E2F65 /* PlaceSearchTests */,
 			);
-			path = "UseCases Tests";
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		FB9388441FC6046D006E2F65 /* PlaceSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB9388451FC6046D006E2F65 /* Assembly */,
+				FB9388481FC6046D006E2F65 /* Interactor */,
+				FB93884A1FC6046D006E2F65 /* Presenter */,
+				FB93884C1FC6046D006E2F65 /* Router */,
+				FB93884E1FC6046D006E2F65 /* View */,
+			);
+			path = PlaceSearchTests;
+			sourceTree = "<group>";
+		};
+		FB9388451FC6046D006E2F65 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				FB9388461FC6046D006E2F65 /* PlaceSearchAssembly_Testable.h */,
+				FB9388471FC6046D006E2F65 /* PlaceSearchAssemblyTests.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		FB9388481FC6046D006E2F65 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FB9388491FC6046D006E2F65 /* PlaceSearchInteractorTests.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FB93884A1FC6046D006E2F65 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FB93884B1FC6046D006E2F65 /* PlaceSearchPresenterTests.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FB93884C1FC6046D006E2F65 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FB93884D1FC6046D006E2F65 /* PlaceSearchRouterTests.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FB93884E1FC6046D006E2F65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB93884F1FC6046D006E2F65 /* PlaceSearchViewControllerTests.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB9388501FC60489006E2F65 /* PlaceSearch */ = {
+			isa = PBXGroup;
+			children = (
+				FB9388681FC60501006E2F65 /* Storyboard */,
+				FB9388671FC604F6006E2F65 /* Module */,
+			);
+			path = PlaceSearch;
+			sourceTree = "<group>";
+		};
+		FB9388511FC60489006E2F65 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				FB9388521FC60489006E2F65 /* PlaceSearchAssembly.h */,
+				FB9388531FC60489006E2F65 /* PlaceSearchAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		FB9388541FC60489006E2F65 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FB9388551FC60489006E2F65 /* PlaceSearchInteractor.h */,
+				FB9388561FC60489006E2F65 /* PlaceSearchInteractor.m */,
+				FB9388571FC60489006E2F65 /* PlaceSearchInteractorInput.h */,
+				FB9388581FC60489006E2F65 /* PlaceSearchInteractorOutput.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FB9388591FC60489006E2F65 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FB93885A1FC60489006E2F65 /* PlaceSearchModuleInput.h */,
+				FB93885B1FC60489006E2F65 /* PlaceSearchPresenter.h */,
+				FB93885C1FC60489006E2F65 /* PlaceSearchPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FB93885D1FC60489006E2F65 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FB93885E1FC60489006E2F65 /* PlaceSearchRouter.h */,
+				FB93885F1FC60489006E2F65 /* PlaceSearchRouter.m */,
+				FB9388601FC60489006E2F65 /* PlaceSearchRouterInput.h */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FB9388611FC60489006E2F65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB9388621FC60489006E2F65 /* PlaceSearchViewController.h */,
+				FB9388631FC60489006E2F65 /* PlaceSearchViewController.m */,
+				FB9388641FC60489006E2F65 /* PlaceSearchViewInput.h */,
+				FB9388651FC60489006E2F65 /* PlaceSearchViewOutput.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB9388671FC604F6006E2F65 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				FB9388511FC60489006E2F65 /* Assembly */,
+				FB9388541FC60489006E2F65 /* Interactor */,
+				FB9388591FC60489006E2F65 /* Presenter */,
+				FB93885D1FC60489006E2F65 /* Router */,
+				FB9388611FC60489006E2F65 /* View */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		FB9388681FC60501006E2F65 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FB9388691FC60520006E2F65 /* PlaceSearch.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,7 +397,7 @@
 		FB51B4E11FA1139E004089B5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Dmytro Vdovychenko";
 				TargetAttributes = {
 					FB51B4E81FA1139E004089B5 = {
@@ -360,6 +437,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB93886A1FC60520006E2F65 /* PlaceSearch.storyboard in Resources */,
 				FB51B4FC1FA1139E004089B5 /* LaunchScreen.storyboard in Resources */,
 				FB51B4F91FA1139E004089B5 /* Assets.xcassets in Resources */,
 				FB51B4F71FA1139E004089B5 /* Main.storyboard in Resources */,
@@ -445,11 +523,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				769CD9F3F2E8F66C4FBEAE33 /* VPRCardsListAssemblyTests.m in Sources */,
-				5A8B3CAC95F69AC95125A11C /* VPRCardsListViewControllerTests.m in Sources */,
-				05FD96692A790C760AAE14EA /* VPRCardsListPresenterTests.m in Sources */,
-				470D0EF12D74E1831C4B70F7 /* VPRCardsListInteractorTests.m in Sources */,
-				71F5DD4CDA8FF90B46C3681F /* VPRCardsListRouterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +566,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -501,7 +576,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -542,7 +621,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -550,7 +631,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
