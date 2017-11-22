@@ -172,10 +172,11 @@
 		FB51B4EB1FA1139E004089B5 /* VIPERCards */ = {
 			isa = PBXGroup;
 			children = (
+				FB9388411FC60128006E2F65 /* Presentation Layer */,
+				FB93883F1FC5FF76006E2F65 /* Core Layer */,
+				FB93883E1FC5FF63006E2F65 /* Business Layer  */,
+				FB93883D1FC5FF53006E2F65 /* Application Layer */,
 				FB51B5471FA1CFE5004089B5 /* Resources */,
-				FB51B5451FA1CF92004089B5 /* Use Cases */,
-				FB51B4EF1FA1139E004089B5 /* AppDelegate.h */,
-				FB51B4F01FA1139E004089B5 /* AppDelegate.m */,
 				FB51B4F51FA1139E004089B5 /* Main.storyboard */,
 				FB51B4EC1FA1139E004089B5 /* Supporting Files */,
 			);
@@ -202,13 +203,6 @@
 			path = VIPERCardsTests;
 			sourceTree = "<group>";
 		};
-		FB51B5451FA1CF92004089B5 /* Use Cases */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Use Cases";
-			sourceTree = "<group>";
-		};
 		FB51B5461FA1CF9C004089B5 /* UseCases Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +217,52 @@
 				FB51B4F81FA1139E004089B5 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FB93883D1FC5FF53006E2F65 /* Application Layer */ = {
+			isa = PBXGroup;
+			children = (
+				FB9388401FC5FF93006E2F65 /* App Delegate */,
+			);
+			path = "Application Layer";
+			sourceTree = "<group>";
+		};
+		FB93883E1FC5FF63006E2F65 /* Business Layer  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Business Layer ";
+			sourceTree = "<group>";
+		};
+		FB93883F1FC5FF76006E2F65 /* Core Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Core Layer";
+			sourceTree = "<group>";
+		};
+		FB9388401FC5FF93006E2F65 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				FB51B4EF1FA1139E004089B5 /* AppDelegate.h */,
+				FB51B4F01FA1139E004089B5 /* AppDelegate.m */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		FB9388411FC60128006E2F65 /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				FB9388421FC6013C006E2F65 /* Use cases */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		FB9388421FC6013C006E2F65 /* Use cases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Use cases";
 			sourceTree = "<group>";
 		};
 		FC9AF5FE46DBEE7F1A76FDBA /* UseCases Tests */ = {
