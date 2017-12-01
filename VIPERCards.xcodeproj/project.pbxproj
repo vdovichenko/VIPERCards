@@ -13,6 +13,9 @@
 		FB51B4F71FA1139E004089B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB51B4F51FA1139E004089B5 /* Main.storyboard */; };
 		FB51B4F91FA1139E004089B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB51B4F81FA1139E004089B5 /* Assets.xcassets */; };
 		FB51B4FC1FA1139E004089B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB51B4FA1FA1139E004089B5 /* LaunchScreen.storyboard */; };
+		FB658F211FD08CF300DA059E /* SearchServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB658F201FD08CF300DA059E /* SearchServiceImplementation.m */; };
+		FB658F2B1FD0952200DA059E /* SessionNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FB658F2A1FD0952200DA059E /* SessionNetworkClient.m */; };
+		FB658F2F1FD0958600DA059E /* ServiceResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB658F2E1FD0958600DA059E /* ServiceResponse.m */; };
 		FB93886A1FC60520006E2F65 /* PlaceSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9388691FC60520006E2F65 /* PlaceSearch.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +43,14 @@
 		FB51B4FD1FA1139E004089B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB51B5021FA1139E004089B5 /* VIPERCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPERCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB51B5081FA1139E004089B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB658F1E1FD08CD500DA059E /* SearchService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchService.h; sourceTree = "<group>"; };
+		FB658F1F1FD08CF300DA059E /* SearchServiceImplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchServiceImplementation.h; sourceTree = "<group>"; };
+		FB658F201FD08CF300DA059E /* SearchServiceImplementation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchServiceImplementation.m; sourceTree = "<group>"; };
+		FB658F271FD094F700DA059E /* NetworkClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkClient.h; sourceTree = "<group>"; };
+		FB658F291FD0952200DA059E /* SessionNetworkClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionNetworkClient.h; sourceTree = "<group>"; };
+		FB658F2A1FD0952200DA059E /* SessionNetworkClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionNetworkClient.m; sourceTree = "<group>"; };
+		FB658F2D1FD0958600DA059E /* ServiceResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceResponse.h; sourceTree = "<group>"; };
+		FB658F2E1FD0958600DA059E /* ServiceResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceResponse.m; sourceTree = "<group>"; };
 		FB9388461FC6046D006E2F65 /* PlaceSearchAssembly_Testable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceSearchAssembly_Testable.h; sourceTree = "<group>"; };
 		FB9388471FC6046D006E2F65 /* PlaceSearchAssemblyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceSearchAssemblyTests.m; sourceTree = "<group>"; };
 		FB9388491FC6046D006E2F65 /* PlaceSearchInteractorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceSearchInteractorTests.m; sourceTree = "<group>"; };
@@ -162,6 +173,76 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		FB658F1C1FD08C5500DA059E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FB658F1D1FD08C6600DA059E /* SearchService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FB658F1D1FD08C6600DA059E /* SearchService */ = {
+			isa = PBXGroup;
+			children = (
+				FB658F1E1FD08CD500DA059E /* SearchService.h */,
+				FB658F1F1FD08CF300DA059E /* SearchServiceImplementation.h */,
+				FB658F201FD08CF300DA059E /* SearchServiceImplementation.m */,
+			);
+			path = SearchService;
+			sourceTree = "<group>";
+		};
+		FB658F221FD08E2200DA059E /* Core Components */ = {
+			isa = PBXGroup;
+			children = (
+				FB658F231FD0947C00DA059E /* Network Client */,
+			);
+			path = "Core Components";
+			sourceTree = "<group>";
+		};
+		FB658F231FD0947C00DA059E /* Network Client */ = {
+			isa = PBXGroup;
+			children = (
+				FB658F261FD094C200DA059E /* Concrete Classes */,
+				FB658F251FD094A600DA059E /* Models */,
+				FB658F241FD0949100DA059E /* Protocols */,
+			);
+			path = "Network Client";
+			sourceTree = "<group>";
+		};
+		FB658F241FD0949100DA059E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FB658F271FD094F700DA059E /* NetworkClient.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FB658F251FD094A600DA059E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB658F2C1FD0956900DA059E /* Service Response */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB658F261FD094C200DA059E /* Concrete Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FB658F291FD0952200DA059E /* SessionNetworkClient.h */,
+				FB658F2A1FD0952200DA059E /* SessionNetworkClient.m */,
+			);
+			path = "Concrete Classes";
+			sourceTree = "<group>";
+		};
+		FB658F2C1FD0956900DA059E /* Service Response */ = {
+			isa = PBXGroup;
+			children = (
+				FB658F2D1FD0958600DA059E /* ServiceResponse.h */,
+				FB658F2E1FD0958600DA059E /* ServiceResponse.m */,
+			);
+			path = "Service Response";
+			sourceTree = "<group>";
+		};
 		FB93883D1FC5FF53006E2F65 /* Application Layer */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +254,7 @@
 		FB93883E1FC5FF63006E2F65 /* Business Layer  */ = {
 			isa = PBXGroup;
 			children = (
+				FB658F1C1FD08C5500DA059E /* Services */,
 			);
 			path = "Business Layer ";
 			sourceTree = "<group>";
@@ -180,6 +262,7 @@
 		FB93883F1FC5FF76006E2F65 /* Core Layer */ = {
 			isa = PBXGroup;
 			children = (
+				FB658F221FD08E2200DA059E /* Core Components */,
 			);
 			path = "Core Layer";
 			sourceTree = "<group>";
@@ -515,7 +598,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB51B4F11FA1139E004089B5 /* AppDelegate.m in Sources */,
+				FB658F211FD08CF300DA059E /* SearchServiceImplementation.m in Sources */,
+				FB658F2B1FD0952200DA059E /* SessionNetworkClient.m in Sources */,
 				FB51B4EE1FA1139E004089B5 /* main.m in Sources */,
+				FB658F2F1FD0958600DA059E /* ServiceResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
