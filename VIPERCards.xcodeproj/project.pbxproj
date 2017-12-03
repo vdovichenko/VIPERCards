@@ -11,6 +11,10 @@
 		BFFCEC1D1FD407B600234DA3 /* RequestConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCEC1C1FD407B600234DA3 /* RequestConfiguration.m */; };
 		BFFCEC241FD4086A00234DA3 /* GoogleRequestSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCEC231FD4086A00234DA3 /* GoogleRequestSigner.m */; };
 		BFFCEC2D1FD4095D00234DA3 /* CommonRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCEC2C1FD4095D00234DA3 /* CommonRequestBuilder.m */; };
+		BFFCEC3C1FD4253E00234DA3 /* RequestSignersAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCEC3B1FD4253E00234DA3 /* RequestSignersAssembly.m */; };
+		BFFCEC3E1FD4275100234DA3 /* Places.Google.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFFCEC3D1FD4275100234DA3 /* Places.Google.plist */; };
+		BFFCEC431FD4291300234DA3 /* NetworkClientAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCEC421FD4291300234DA3 /* NetworkClientAssembly.m */; };
+		BFFCEC481FD42A6C00234DA3 /* RequestBuildersAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCEC471FD42A6C00234DA3 /* RequestBuildersAssembly.m */; };
 		FB51B4EE1FA1139E004089B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB51B4ED1FA1139E004089B5 /* main.m */; };
 		FB51B4F11FA1139E004089B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB51B4F01FA1139E004089B5 /* AppDelegate.m */; };
 		FB51B4F71FA1139E004089B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB51B4F51FA1139E004089B5 /* Main.storyboard */; };
@@ -43,6 +47,18 @@
 		BFFCEC2A1FD4092F00234DA3 /* RequestBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestBuilder.h; sourceTree = "<group>"; };
 		BFFCEC2B1FD4095D00234DA3 /* CommonRequestBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonRequestBuilder.h; sourceTree = "<group>"; };
 		BFFCEC2C1FD4095D00234DA3 /* CommonRequestBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonRequestBuilder.m; sourceTree = "<group>"; };
+		BFFCEC2E1FD416F400234DA3 /* RequestSigningType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestSigningType.h; sourceTree = "<group>"; };
+		BFFCEC301FD4195500234DA3 /* HTTPMethodConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPMethodConstants.h; sourceTree = "<group>"; };
+		BFFCEC391FD4218A00234DA3 /* RequestSignersFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestSignersFactory.h; sourceTree = "<group>"; };
+		BFFCEC3A1FD4253E00234DA3 /* RequestSignersAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestSignersAssembly.h; sourceTree = "<group>"; };
+		BFFCEC3B1FD4253E00234DA3 /* RequestSignersAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestSignersAssembly.m; sourceTree = "<group>"; };
+		BFFCEC3D1FD4275100234DA3 /* Places.Google.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Places.Google.plist; sourceTree = "<group>"; };
+		BFFCEC401FD428CD00234DA3 /* NetworkClientsFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkClientsFactory.h; sourceTree = "<group>"; };
+		BFFCEC411FD4291200234DA3 /* NetworkClientAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkClientAssembly.h; sourceTree = "<group>"; };
+		BFFCEC421FD4291300234DA3 /* NetworkClientAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkClientAssembly.m; sourceTree = "<group>"; };
+		BFFCEC451FD42A3300234DA3 /* RequestBuildersFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestBuildersFactory.h; sourceTree = "<group>"; };
+		BFFCEC461FD42A6C00234DA3 /* RequestBuildersAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestBuildersAssembly.h; sourceTree = "<group>"; };
+		BFFCEC471FD42A6C00234DA3 /* RequestBuildersAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestBuildersAssembly.m; sourceTree = "<group>"; };
 		FB51B4E91FA1139E004089B5 /* VIPERCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB51B4ED1FA1139E004089B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB51B4EF1FA1139E004089B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,8 +142,7 @@
 		BFFCEC1A1FD4079800234DA3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BFFCEC1B1FD407B600234DA3 /* RequestConfiguration.h */,
-				BFFCEC1C1FD407B600234DA3 /* RequestConfiguration.m */,
+				BFFCEC321FD4199D00234DA3 /* Request Configuration */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -137,6 +152,7 @@
 			children = (
 				BFFCEC211FD4081C00234DA3 /* Concrete Classes */,
 				BFFCEC1F1FD407E100234DA3 /* Protocols */,
+				BFFCEC2E1FD416F400234DA3 /* RequestSigningType.h */,
 			);
 			path = "Request Signer";
 			sourceTree = "<group>";
@@ -173,6 +189,72 @@
 				BFFCEC2A1FD4092F00234DA3 /* RequestBuilder.h */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BFFCEC2F1FD4192100234DA3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCEC311FD4197500234DA3 /* Networking */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BFFCEC311FD4197500234DA3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCEC301FD4195500234DA3 /* HTTPMethodConstants.h */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BFFCEC321FD4199D00234DA3 /* Request Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCEC1B1FD407B600234DA3 /* RequestConfiguration.h */,
+				BFFCEC1C1FD407B600234DA3 /* RequestConfiguration.m */,
+			);
+			path = "Request Configuration";
+			sourceTree = "<group>";
+		};
+		BFFCEC371FD4214F00234DA3 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCEC441FD42A0A00234DA3 /* Request Builders Factory */,
+				BFFCEC3F1FD4287900234DA3 /* Network Clients Factory */,
+				BFFCEC381FD4216C00234DA3 /* Request Signers Factory */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		BFFCEC381FD4216C00234DA3 /* Request Signers Factory */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCEC391FD4218A00234DA3 /* RequestSignersFactory.h */,
+				BFFCEC3A1FD4253E00234DA3 /* RequestSignersAssembly.h */,
+				BFFCEC3B1FD4253E00234DA3 /* RequestSignersAssembly.m */,
+				BFFCEC3D1FD4275100234DA3 /* Places.Google.plist */,
+			);
+			path = "Request Signers Factory";
+			sourceTree = "<group>";
+		};
+		BFFCEC3F1FD4287900234DA3 /* Network Clients Factory */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCEC401FD428CD00234DA3 /* NetworkClientsFactory.h */,
+				BFFCEC411FD4291200234DA3 /* NetworkClientAssembly.h */,
+				BFFCEC421FD4291300234DA3 /* NetworkClientAssembly.m */,
+			);
+			path = "Network Clients Factory";
+			sourceTree = "<group>";
+		};
+		BFFCEC441FD42A0A00234DA3 /* Request Builders Factory */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCEC451FD42A3300234DA3 /* RequestBuildersFactory.h */,
+				BFFCEC461FD42A6C00234DA3 /* RequestBuildersAssembly.h */,
+				BFFCEC471FD42A6C00234DA3 /* RequestBuildersAssembly.m */,
+			);
+			path = "Request Builders Factory";
 			sourceTree = "<group>";
 		};
 		E4C34F4FB8300157527612F0 /* Frameworks */ = {
@@ -326,7 +408,9 @@
 		FB93883F1FC5FF76006E2F65 /* Core Layer */ = {
 			isa = PBXGroup;
 			children = (
+				BFFCEC371FD4214F00234DA3 /* Assemblies */,
 				FB658F221FD08E2200DA059E /* Core Components */,
+				BFFCEC2F1FD4192100234DA3 /* Constants */,
 			);
 			path = "Core Layer";
 			sourceTree = "<group>";
@@ -584,6 +668,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFFCEC3E1FD4275100234DA3 /* Places.Google.plist in Resources */,
 				FB93886A1FC60520006E2F65 /* PlaceSearch.storyboard in Resources */,
 				FB51B4FC1FA1139E004089B5 /* LaunchScreen.storyboard in Resources */,
 				FB51B4F71FA1139E004089B5 /* Main.storyboard in Resources */,
@@ -664,8 +749,11 @@
 				FB658F211FD08CF300DA059E /* SearchServiceImplementation.m in Sources */,
 				BFFCEC2D1FD4095D00234DA3 /* CommonRequestBuilder.m in Sources */,
 				FB658F2B1FD0952200DA059E /* SessionNetworkClient.m in Sources */,
+				BFFCEC3C1FD4253E00234DA3 /* RequestSignersAssembly.m in Sources */,
 				FB51B4EE1FA1139E004089B5 /* main.m in Sources */,
 				BFFCEC1D1FD407B600234DA3 /* RequestConfiguration.m in Sources */,
+				BFFCEC481FD42A6C00234DA3 /* RequestBuildersAssembly.m in Sources */,
+				BFFCEC431FD4291300234DA3 /* NetworkClientAssembly.m in Sources */,
 				FB658F2F1FD0958600DA059E /* ServiceResponse.m in Sources */,
 				BFFCEC241FD4086A00234DA3 /* GoogleRequestSigner.m in Sources */,
 			);

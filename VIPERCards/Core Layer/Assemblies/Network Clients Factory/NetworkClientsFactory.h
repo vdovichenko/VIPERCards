@@ -1,5 +1,5 @@
 //
-//  RequestConfiguration.h
+//  NetworkClientsFactory.h
 //  VIPERCards
 //
 //  Created by Dmitry Vdovichenko on 03.12.2017.
@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NetworkClient.h"
 
-@interface RequestConfiguration : NSObject
+@protocol NetworkClientsFactory <NSObject>
+- (id<NetworkClient>)networkClient;
 @end

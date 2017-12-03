@@ -7,7 +7,8 @@
 //
 
 #import "RequestBuilder.h"
-@class RequestConfiguration;
+#import "RequestSignersFactory.h"
 
 @interface CommonRequestBuilder : NSObject <RequestBuilder>
+- (instancetype)initWithRequestSignersFactory:(id<RequestSignersFactory>)requestSignersFactory;
 @end
