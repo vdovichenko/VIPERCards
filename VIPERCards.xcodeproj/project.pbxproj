@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B6CA586DFA498896BDA3D7F8 /* Pods_VIPERCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6358B555595B85845B81BFE6 /* Pods_VIPERCards.framework */; };
+		BFFCEC1D1FD407B600234DA3 /* RequestConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCEC1C1FD407B600234DA3 /* RequestConfiguration.m */; };
+		BFFCEC241FD4086A00234DA3 /* GoogleRequestSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCEC231FD4086A00234DA3 /* GoogleRequestSigner.m */; };
+		BFFCEC2D1FD4095D00234DA3 /* CommonRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCEC2C1FD4095D00234DA3 /* CommonRequestBuilder.m */; };
 		FB51B4EE1FA1139E004089B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB51B4ED1FA1139E004089B5 /* main.m */; };
 		FB51B4F11FA1139E004089B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB51B4F01FA1139E004089B5 /* AppDelegate.m */; };
 		FB51B4F71FA1139E004089B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB51B4F51FA1139E004089B5 /* Main.storyboard */; };
-		FB51B4F91FA1139E004089B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB51B4F81FA1139E004089B5 /* Assets.xcassets */; };
 		FB51B4FC1FA1139E004089B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB51B4FA1FA1139E004089B5 /* LaunchScreen.storyboard */; };
 		FB658F211FD08CF300DA059E /* SearchServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB658F201FD08CF300DA059E /* SearchServiceImplementation.m */; };
 		FB658F2B1FD0952200DA059E /* SessionNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FB658F2A1FD0952200DA059E /* SessionNetworkClient.m */; };
@@ -33,12 +35,19 @@
 		23BEF492060C08E609D89EB5 /* Pods-VIPERCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERCards.release.xcconfig"; path = "Pods/Target Support Files/Pods-VIPERCards/Pods-VIPERCards.release.xcconfig"; sourceTree = "<group>"; };
 		6358B555595B85845B81BFE6 /* Pods_VIPERCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPERCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63CA82F50C6D71BFB3671FB /* Pods-VIPERCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERCards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPERCards/Pods-VIPERCards.debug.xcconfig"; sourceTree = "<group>"; };
+		BFFCEC1B1FD407B600234DA3 /* RequestConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestConfiguration.h; sourceTree = "<group>"; };
+		BFFCEC1C1FD407B600234DA3 /* RequestConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestConfiguration.m; sourceTree = "<group>"; };
+		BFFCEC201FD407F700234DA3 /* RequestSigner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestSigner.h; sourceTree = "<group>"; };
+		BFFCEC221FD4086A00234DA3 /* GoogleRequestSigner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleRequestSigner.h; sourceTree = "<group>"; };
+		BFFCEC231FD4086A00234DA3 /* GoogleRequestSigner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleRequestSigner.m; sourceTree = "<group>"; };
+		BFFCEC2A1FD4092F00234DA3 /* RequestBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestBuilder.h; sourceTree = "<group>"; };
+		BFFCEC2B1FD4095D00234DA3 /* CommonRequestBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonRequestBuilder.h; sourceTree = "<group>"; };
+		BFFCEC2C1FD4095D00234DA3 /* CommonRequestBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonRequestBuilder.m; sourceTree = "<group>"; };
 		FB51B4E91FA1139E004089B5 /* VIPERCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB51B4ED1FA1139E004089B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB51B4EF1FA1139E004089B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FB51B4F01FA1139E004089B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FB51B4F61FA1139E004089B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FB51B4F81FA1139E004089B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		FB51B4FB1FA1139E004089B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB51B4FD1FA1139E004089B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB51B5021FA1139E004089B5 /* VIPERCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPERCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +113,68 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BFFCEC171FD406F900234DA3 /* Request Builder */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCEC291FD4091700234DA3 /* Protocols */,
+				BFFCEC251FD408B200234DA3 /* Concrete Classes */,
+				BFFCEC1A1FD4079800234DA3 /* Models */,
+			);
+			path = "Request Builder";
+			sourceTree = "<group>";
+		};
+		BFFCEC1A1FD4079800234DA3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCEC1B1FD407B600234DA3 /* RequestConfiguration.h */,
+				BFFCEC1C1FD407B600234DA3 /* RequestConfiguration.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BFFCEC1E1FD407D800234DA3 /* Request Signer */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCEC211FD4081C00234DA3 /* Concrete Classes */,
+				BFFCEC1F1FD407E100234DA3 /* Protocols */,
+			);
+			path = "Request Signer";
+			sourceTree = "<group>";
+		};
+		BFFCEC1F1FD407E100234DA3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCEC201FD407F700234DA3 /* RequestSigner.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BFFCEC211FD4081C00234DA3 /* Concrete Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCEC221FD4086A00234DA3 /* GoogleRequestSigner.h */,
+				BFFCEC231FD4086A00234DA3 /* GoogleRequestSigner.m */,
+			);
+			path = "Concrete Classes";
+			sourceTree = "<group>";
+		};
+		BFFCEC251FD408B200234DA3 /* Concrete Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCEC2B1FD4095D00234DA3 /* CommonRequestBuilder.h */,
+				BFFCEC2C1FD4095D00234DA3 /* CommonRequestBuilder.m */,
+			);
+			path = "Concrete Classes";
+			sourceTree = "<group>";
+		};
+		BFFCEC291FD4091700234DA3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCEC2A1FD4092F00234DA3 /* RequestBuilder.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		E4C34F4FB8300157527612F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,7 +210,6 @@
 				FB93883F1FC5FF76006E2F65 /* Core Layer */,
 				FB93883E1FC5FF63006E2F65 /* Business Layer  */,
 				FB93883D1FC5FF53006E2F65 /* Application Layer */,
-				FB51B5471FA1CFE5004089B5 /* Resources */,
 				FB51B4F51FA1139E004089B5 /* Main.storyboard */,
 				FB51B4EC1FA1139E004089B5 /* Supporting Files */,
 			);
@@ -165,14 +235,6 @@
 			path = VIPERCardsTests;
 			sourceTree = "<group>";
 		};
-		FB51B5471FA1CFE5004089B5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				FB51B4F81FA1139E004089B5 /* Assets.xcassets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		FB658F1C1FD08C5500DA059E /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +256,8 @@
 		FB658F221FD08E2200DA059E /* Core Components */ = {
 			isa = PBXGroup;
 			children = (
+				BFFCEC1E1FD407D800234DA3 /* Request Signer */,
+				BFFCEC171FD406F900234DA3 /* Request Builder */,
 				FB658F231FD0947C00DA059E /* Network Client */,
 			);
 			path = "Core Components";
@@ -522,7 +586,6 @@
 			files = (
 				FB93886A1FC60520006E2F65 /* PlaceSearch.storyboard in Resources */,
 				FB51B4FC1FA1139E004089B5 /* LaunchScreen.storyboard in Resources */,
-				FB51B4F91FA1139E004089B5 /* Assets.xcassets in Resources */,
 				FB51B4F71FA1139E004089B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,9 +662,12 @@
 			files = (
 				FB51B4F11FA1139E004089B5 /* AppDelegate.m in Sources */,
 				FB658F211FD08CF300DA059E /* SearchServiceImplementation.m in Sources */,
+				BFFCEC2D1FD4095D00234DA3 /* CommonRequestBuilder.m in Sources */,
 				FB658F2B1FD0952200DA059E /* SessionNetworkClient.m in Sources */,
 				FB51B4EE1FA1139E004089B5 /* main.m in Sources */,
+				BFFCEC1D1FD407B600234DA3 /* RequestConfiguration.m in Sources */,
 				FB658F2F1FD0958600DA059E /* ServiceResponse.m in Sources */,
+				BFFCEC241FD4086A00234DA3 /* GoogleRequestSigner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
