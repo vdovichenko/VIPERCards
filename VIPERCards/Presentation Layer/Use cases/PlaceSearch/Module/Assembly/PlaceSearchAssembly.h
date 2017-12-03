@@ -7,13 +7,8 @@
 //
 
 #import <Typhoon/Typhoon.h>
-#import <RamblerTyphoonUtils/AssemblyCollector.h>
+@class ServiceComponentsAssembly;
 
-/**
- @author Vdovychenko Dmytro
-
- PlaceSearch module
- */
-@interface PlaceSearchAssembly : TyphoonAssembly <RamblerInitialAssembly>
-
+@interface PlaceSearchAssembly : TyphoonAssembly
+@property (strong, nonatomic) ServiceComponentsAssembly *serviceComponentsAssembly;
 @end

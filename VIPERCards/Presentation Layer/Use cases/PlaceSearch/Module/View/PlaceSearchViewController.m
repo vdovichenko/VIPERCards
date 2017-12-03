@@ -12,18 +12,16 @@
 
 @implementation PlaceSearchViewController
 
-#pragma mark - Методы жизненного цикла
+#pragma mark - Life cycle
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-
 	[self.output didTriggerViewReadyEvent];
 }
 
-#pragma mark - Методы PlaceSearchViewInput
+#pragma mark -
 
 - (void)setupInitialState {
-	// В этом методе происходит настройка параметров view, зависящих от ее жизненого цикла (создание элементов, анимации и пр.)
 }
 
 @end

@@ -9,9 +9,11 @@
 #import "PlaceSearchInteractorInput.h"
 
 @protocol PlaceSearchInteractorOutput;
+@protocol SearchService;
 
 @interface PlaceSearchInteractor : NSObject <PlaceSearchInteractorInput>
 
 @property (nonatomic, weak) id<PlaceSearchInteractorOutput> output;
+@property (nonatomic, strong) id<SearchService> searchService;
 
 @end

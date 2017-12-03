@@ -7,6 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NetworkClient.h"
+#import "RequestBuilder.h"
 
 @interface SearchServiceImplementation : NSObject
+- (instancetype)initWithNetworkClient:(id<NetworkClient>)networkClient
+                       requestBuilder:(id<RequestBuilder>)requestBuilder;
 @end

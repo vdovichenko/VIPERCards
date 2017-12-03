@@ -7,6 +7,7 @@
 //
 
 #import "PlaceSearchAssembly.h"
+#import "ServiceComponentsAssembly.h"
 
 #import "PlaceSearchViewController.h"
 #import "PlaceSearchInteractor.h"
@@ -32,6 +33,8 @@
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(output)
                                                     with:[self presenterPlaceSearch]];
+                              [definition injectProperty:@selector(searchService)
+                                                    with:[self.serviceComponentsAssembly searchService]];
                           }];
 }
 

@@ -15,6 +15,12 @@
 		BFFCEC3E1FD4275100234DA3 /* Places.Google.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFFCEC3D1FD4275100234DA3 /* Places.Google.plist */; };
 		BFFCEC431FD4291300234DA3 /* NetworkClientAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCEC421FD4291300234DA3 /* NetworkClientAssembly.m */; };
 		BFFCEC481FD42A6C00234DA3 /* RequestBuildersAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCEC471FD42A6C00234DA3 /* RequestBuildersAssembly.m */; };
+		BFFCEC4D1FD4301700234DA3 /* ServiceComponentsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCEC4C1FD4301700234DA3 /* ServiceComponentsAssembly.m */; };
+		BFFCEC4E1FD4375900234DA3 /* PlaceSearchAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9388531FC60489006E2F65 /* PlaceSearchAssembly.m */; };
+		BFFCEC4F1FD4375C00234DA3 /* PlaceSearchInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9388561FC60489006E2F65 /* PlaceSearchInteractor.m */; };
+		BFFCEC501FD4376100234DA3 /* PlaceSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9388631FC60489006E2F65 /* PlaceSearchViewController.m */; };
+		BFFCEC511FD4376500234DA3 /* PlaceSearchRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB93885F1FC60489006E2F65 /* PlaceSearchRouter.m */; };
+		BFFCEC521FD4376900234DA3 /* PlaceSearchPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB93885C1FC60489006E2F65 /* PlaceSearchPresenter.m */; };
 		FB51B4EE1FA1139E004089B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB51B4ED1FA1139E004089B5 /* main.m */; };
 		FB51B4F11FA1139E004089B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB51B4F01FA1139E004089B5 /* AppDelegate.m */; };
 		FB51B4F71FA1139E004089B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB51B4F51FA1139E004089B5 /* Main.storyboard */; };
@@ -59,6 +65,9 @@
 		BFFCEC451FD42A3300234DA3 /* RequestBuildersFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestBuildersFactory.h; sourceTree = "<group>"; };
 		BFFCEC461FD42A6C00234DA3 /* RequestBuildersAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestBuildersAssembly.h; sourceTree = "<group>"; };
 		BFFCEC471FD42A6C00234DA3 /* RequestBuildersAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestBuildersAssembly.m; sourceTree = "<group>"; };
+		BFFCEC4A1FD42FDE00234DA3 /* ServiceComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceComponents.h; sourceTree = "<group>"; };
+		BFFCEC4B1FD4301700234DA3 /* ServiceComponentsAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceComponentsAssembly.h; sourceTree = "<group>"; };
+		BFFCEC4C1FD4301700234DA3 /* ServiceComponentsAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceComponentsAssembly.m; sourceTree = "<group>"; };
 		FB51B4E91FA1139E004089B5 /* VIPERCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB51B4ED1FA1139E004089B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB51B4EF1FA1139E004089B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -257,6 +266,16 @@
 			path = "Request Builders Factory";
 			sourceTree = "<group>";
 		};
+		BFFCEC491FD42FBE00234DA3 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCEC4A1FD42FDE00234DA3 /* ServiceComponents.h */,
+				BFFCEC4B1FD4301700234DA3 /* ServiceComponentsAssembly.h */,
+				BFFCEC4C1FD4301700234DA3 /* ServiceComponentsAssembly.m */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
 		E4C34F4FB8300157527612F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +419,7 @@
 		FB93883E1FC5FF63006E2F65 /* Business Layer  */ = {
 			isa = PBXGroup;
 			children = (
+				BFFCEC491FD42FBE00234DA3 /* Assemblies */,
 				FB658F1C1FD08C5500DA059E /* Services */,
 			);
 			path = "Business Layer ";
@@ -745,15 +765,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFFCEC4F1FD4375C00234DA3 /* PlaceSearchInteractor.m in Sources */,
 				FB51B4F11FA1139E004089B5 /* AppDelegate.m in Sources */,
 				FB658F211FD08CF300DA059E /* SearchServiceImplementation.m in Sources */,
 				BFFCEC2D1FD4095D00234DA3 /* CommonRequestBuilder.m in Sources */,
+				BFFCEC4E1FD4375900234DA3 /* PlaceSearchAssembly.m in Sources */,
 				FB658F2B1FD0952200DA059E /* SessionNetworkClient.m in Sources */,
 				BFFCEC3C1FD4253E00234DA3 /* RequestSignersAssembly.m in Sources */,
 				FB51B4EE1FA1139E004089B5 /* main.m in Sources */,
 				BFFCEC1D1FD407B600234DA3 /* RequestConfiguration.m in Sources */,
 				BFFCEC481FD42A6C00234DA3 /* RequestBuildersAssembly.m in Sources */,
+				BFFCEC511FD4376500234DA3 /* PlaceSearchRouter.m in Sources */,
+				BFFCEC501FD4376100234DA3 /* PlaceSearchViewController.m in Sources */,
+				BFFCEC521FD4376900234DA3 /* PlaceSearchPresenter.m in Sources */,
 				BFFCEC431FD4291300234DA3 /* NetworkClientAssembly.m in Sources */,
+				BFFCEC4D1FD4301700234DA3 /* ServiceComponentsAssembly.m in Sources */,
 				FB658F2F1FD0958600DA059E /* ServiceResponse.m in Sources */,
 				BFFCEC241FD4086A00234DA3 /* GoogleRequestSigner.m in Sources */,
 			);

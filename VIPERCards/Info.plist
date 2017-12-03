@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>TyphoonInitialAssemblies</key>
+	<array>
+		<string>RequestBuildersAssembly</string>
+		<string>NetworkClientAssembly</string>
+		<string>RequestSignersAssembly</string>
+		<string>ServiceComponentsAssembly</string>
+		<string>PlaceSearchAssembly</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
