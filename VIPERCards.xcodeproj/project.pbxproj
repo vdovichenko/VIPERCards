@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B6CA586DFA498896BDA3D7F8 /* Pods_VIPERCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6358B555595B85845B81BFE6 /* Pods_VIPERCards.framework */; };
+		BFC597531FD72D100045DF30 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC597521FD72D100045DF30 /* Place.m */; };
 		BFFCEC1D1FD407B600234DA3 /* RequestConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCEC1C1FD407B600234DA3 /* RequestConfiguration.m */; };
 		BFFCEC241FD4086A00234DA3 /* GoogleRequestSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCEC231FD4086A00234DA3 /* GoogleRequestSigner.m */; };
 		BFFCEC2D1FD4095D00234DA3 /* CommonRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCEC2C1FD4095D00234DA3 /* CommonRequestBuilder.m */; };
@@ -45,6 +46,8 @@
 		23BEF492060C08E609D89EB5 /* Pods-VIPERCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERCards.release.xcconfig"; path = "Pods/Target Support Files/Pods-VIPERCards/Pods-VIPERCards.release.xcconfig"; sourceTree = "<group>"; };
 		6358B555595B85845B81BFE6 /* Pods_VIPERCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPERCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63CA82F50C6D71BFB3671FB /* Pods-VIPERCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERCards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPERCards/Pods-VIPERCards.debug.xcconfig"; sourceTree = "<group>"; };
+		BFC597511FD72D100045DF30 /* Place.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		BFC597521FD72D100045DF30 /* Place.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
 		BFFCEC1B1FD407B600234DA3 /* RequestConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestConfiguration.h; sourceTree = "<group>"; };
 		BFFCEC1C1FD407B600234DA3 /* RequestConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestConfiguration.m; sourceTree = "<group>"; };
 		BFFCEC201FD407F700234DA3 /* RequestSigner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestSigner.h; sourceTree = "<group>"; };
@@ -136,6 +139,23 @@
 				23BEF492060C08E609D89EB5 /* Pods-VIPERCards.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BFC5974F1FD72CCE0045DF30 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFC597501FD72CEB0045DF30 /* Place */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BFC597501FD72CEB0045DF30 /* Place */ = {
+			isa = PBXGroup;
+			children = (
+				BFC597511FD72D100045DF30 /* Place.h */,
+				BFC597521FD72D100045DF30 /* Place.m */,
+			);
+			path = Place;
 			sourceTree = "<group>";
 		};
 		BFFCEC171FD406F900234DA3 /* Request Builder */ = {
@@ -307,6 +327,7 @@
 		FB51B4EB1FA1139E004089B5 /* VIPERCards */ = {
 			isa = PBXGroup;
 			children = (
+				BFC5974F1FD72CCE0045DF30 /* Models */,
 				FB9388411FC60128006E2F65 /* Presentation Layer */,
 				FB93883F1FC5FF76006E2F65 /* Core Layer */,
 				FB93883E1FC5FF63006E2F65 /* Business Layer  */,
@@ -780,6 +801,7 @@
 				BFFCEC521FD4376900234DA3 /* PlaceSearchPresenter.m in Sources */,
 				BFFCEC431FD4291300234DA3 /* NetworkClientAssembly.m in Sources */,
 				BFFCEC4D1FD4301700234DA3 /* ServiceComponentsAssembly.m in Sources */,
+				BFC597531FD72D100045DF30 /* Place.m in Sources */,
 				FB658F2F1FD0958600DA059E /* ServiceResponse.m in Sources */,
 				BFFCEC241FD4086A00234DA3 /* GoogleRequestSigner.m in Sources */,
 			);

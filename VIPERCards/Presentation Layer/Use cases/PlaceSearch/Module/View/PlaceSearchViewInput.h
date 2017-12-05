@@ -9,12 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @protocol PlaceSearchViewInput <NSObject>
-
-/**
- @author Vdovychenko Dmytro
-
- Метод настраивает начальный стейт view
- */
 - (void)setupInitialState;
-
+- (void)showSpinner;
+- (void)hideSpinner;
 @end

@@ -7,11 +7,26 @@
 //
 
 #import "PlaceSearchInteractor.h"
-
 #import "PlaceSearchInteractorOutput.h"
+#import "SearchService.h"
 
 @implementation PlaceSearchInteractor
 
-#pragma mark - Методы PlaceSearchInteractorInput
+#pragma mark - PlaceSearchInteractorInput
+
+- (void)searchPlacesWithName:(NSString *)name {
+    [NSThread cancelPreviousPerformRequestsWithTarget:self selector:@selector(searchPlacesDelayed:) object:nil];
+    [self performSelector:@selector(searchPlacesDelayed:) withObject:name afterDelay:0.1];
+}
+
+#pragma mark -
+
+- (void)searchPlacesDelayed:(NSString *)text {
+    [self.searchService getPlacesWithName:text completion:^(NSArray<Place *> *places, NSError *error) {
+    }];
+}
+
+- (void)cancelSearch {
+}
 
 @end

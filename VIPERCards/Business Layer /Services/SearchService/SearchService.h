@@ -7,6 +7,11 @@
 //
 
 #import "SearchService.h"
+@class Place;
+
+typedef void (^PlacesCompletionBlock)(NSArray<Place *> *places, NSError *error);
 
 @protocol SearchService <NSObject>
+- (void)getPlacesWithName:(NSString *)name
+               completion:(PlacesCompletionBlock)completion;
 @end

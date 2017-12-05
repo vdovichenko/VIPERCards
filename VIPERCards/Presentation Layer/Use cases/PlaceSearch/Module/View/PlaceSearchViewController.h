@@ -7,13 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #import "PlaceSearchViewInput.h"
 
 @protocol PlaceSearchViewOutput;
 
 @interface PlaceSearchViewController : UIViewController <PlaceSearchViewInput>
-
 @property (nonatomic, strong) id<PlaceSearchViewOutput> output;
-
 @end

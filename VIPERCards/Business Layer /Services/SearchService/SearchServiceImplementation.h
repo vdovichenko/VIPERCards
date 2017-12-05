@@ -6,11 +6,11 @@
 //  Copyright © 2017 Dmytro Vdovychenko. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "NetworkClient.h"
 #import "RequestBuilder.h"
+#import "SearchService.h"
 
-@interface SearchServiceImplementation : NSObject
+@interface SearchServiceImplementation : NSObject <SearchService>
 - (instancetype)initWithNetworkClient:(id<NetworkClient>)networkClient
                        requestBuilder:(id<RequestBuilder>)requestBuilder;
 @end

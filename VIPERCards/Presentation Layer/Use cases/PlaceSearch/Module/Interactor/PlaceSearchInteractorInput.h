@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @protocol PlaceSearchInteractorInput <NSObject>
-
+- (void)searchPlacesWithName:(NSString *)name;
+- (void)cancelSearch;
 @end

@@ -10,20 +10,47 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Place Search View Controller-->
+        <!--Search-->
         <scene sceneID="NKG-n9-oDg">
             <objects>
-                <viewController id="gqb-Py-57c" customClass="PlaceSearchViewController" sceneMemberID="viewController">
+                <viewController title="Search" id="gqb-Py-57c" customClass="PlaceSearchViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NjJ-tD-aNu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="J3e-d6-cpG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gqb-Py-57c" id="flD-OJ-GnB"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XNn-qr-clr">
+                                <rect key="frame" x="0.0" y="56" width="375" height="547"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J3e-d6-cpG" firstAttribute="leading" secondItem="hGh-ul-8eA" secondAttribute="leading" id="7mL-60-Iih"/>
+                            <constraint firstItem="XNn-qr-clr" firstAttribute="top" secondItem="J3e-d6-cpG" secondAttribute="bottom" id="VWo-Na-uMF"/>
+                            <constraint firstItem="J3e-d6-cpG" firstAttribute="top" secondItem="NjJ-tD-aNu" secondAttribute="top" id="Xwg-sA-3P1"/>
+                            <constraint firstItem="J3e-d6-cpG" firstAttribute="trailing" secondItem="hGh-ul-8eA" secondAttribute="trailing" id="Xzm-Yz-ye1"/>
+                            <constraint firstItem="XNn-qr-clr" firstAttribute="leading" secondItem="hGh-ul-8eA" secondAttribute="leading" id="dY0-bt-hOa"/>
+                            <constraint firstItem="XNn-qr-clr" firstAttribute="trailing" secondItem="hGh-ul-8eA" secondAttribute="trailing" id="rlj-Wb-zDx"/>
+                            <constraint firstItem="XNn-qr-clr" firstAttribute="bottom" secondItem="hGh-ul-8eA" secondAttribute="bottom" id="tMs-M7-LcI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hGh-ul-8eA"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="searchBar" destination="J3e-d6-cpG" id="Qlg-i3-aTo"/>
+                        <outlet property="tableView" destination="XNn-qr-clr" id="IWg-mV-a5i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yNI-Nx-0M0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="149" y="-813"/>
+            <point key="canvasLocation" x="148" y="-813.64317841079469"/>
         </scene>
     </scenes>
 </document>

@@ -25,4 +25,9 @@
     return self;
 }
 
+#pragma mark - SearchService
+
+- (void)getPlacesWithName:(NSString *)name completion:(PlacesCompletionBlock)completion {
+}
+
 @end

@@ -7,25 +7,33 @@
 //
 
 #import "PlaceSearchPresenter.h"
-
 #import "PlaceSearchViewInput.h"
 #import "PlaceSearchInteractorInput.h"
 #import "PlaceSearchRouterInput.h"
 
 @implementation PlaceSearchPresenter
 
-#pragma mark - Методы PlaceSearchModuleInput
+#pragma mark - PlaceSearchModuleInput
 
 - (void)configureModule {
-    // Стартовая конфигурация модуля, не привязанная к состоянию view
 }
 
-#pragma mark - Методы PlaceSearchViewOutput
+#pragma mark - PlaceSearchViewOutput
 
 - (void)didTriggerViewReadyEvent {
 	[self.view setupInitialState];
 }
 
-#pragma mark - Методы PlaceSearchInteractorOutput
+- (void)searchFieldTextDidChange:(NSString *)text {
+    if (text.length) {
+        [self.view showSpinner];
+        [self.interactor searchPlacesWithName:text];
+    } else {
+        [self.view hideSpinner];
+        [self.interactor cancelSearch];
+    }
+}
+
+#pragma mark - PlaceSearchInteractorOutput
 
 @end
