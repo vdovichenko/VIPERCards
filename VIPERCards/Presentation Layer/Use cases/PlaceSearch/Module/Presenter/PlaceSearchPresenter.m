@@ -36,4 +36,10 @@
 
 #pragma mark - PlaceSearchInteractorOutput
 
+- (void)didReceivePlaces:(NSArray<Place *> *)places {
+}
+
+- (void)failedToGetPlacesWithError:(NSError *)error {
+}
+
 @end

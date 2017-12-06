@@ -10,4 +10,10 @@
 
 @interface Place : NSObject
 
+@property (strong, nonatomic, readonly) NSString *id;
+@property (strong, nonatomic, readonly) NSString *name;
+
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+
 @end

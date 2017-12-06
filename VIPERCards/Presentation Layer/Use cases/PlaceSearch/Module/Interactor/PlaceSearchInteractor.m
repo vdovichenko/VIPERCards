@@ -23,6 +23,12 @@
 
 - (void)searchPlacesDelayed:(NSString *)text {
     [self.searchService getPlacesWithName:text completion:^(NSArray<Place *> *places, NSError *error) {
+        if (error) {
+            [self.output failedToGetPlacesWithError:error];
+        } else {
+            // ideally events should be converted to PONSO objects.
+            [self.output didReceivePlaces:places];
+        }
     }];
 }
 

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 @class ServiceResponse;
 
-typedef void(^NetworkClientCompletionBlock)(ServiceResponse *respose, NSError *error);
+typedef void(^NetworkClientCompletionBlock)(ServiceResponse *response, NSError *error);
 
 @protocol NetworkClient <NSObject>
 - (void)sendRequest:(NSURLRequest *)request

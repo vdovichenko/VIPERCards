@@ -10,6 +10,11 @@
 #import "RequestBuilder.h"
 #import "SearchService.h"
 
+typedef NS_ENUM(NSUInteger, SearchServiceError) {
+    SearchServiceErrorUnknown = 0,
+    SearchServiceErrorNoResults
+};
+
 @interface SearchServiceImplementation : NSObject <SearchService>
 - (instancetype)initWithNetworkClient:(id<NetworkClient>)networkClient
                        requestBuilder:(id<RequestBuilder>)requestBuilder;

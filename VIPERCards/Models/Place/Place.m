@@ -8,6 +8,18 @@
 
 #import "Place.h"
 
+static NSString * const kIdKey = @"id";
+static NSString * const kDescriptionKey = @"description";
+
 @implementation Place
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary {
+    self = [super init];
+    if (self) {
+        _id = dictionary[kIdKey];
+        _name = dictionary[kDescriptionKey];
+    }
+    return self;
+}
 
 @end

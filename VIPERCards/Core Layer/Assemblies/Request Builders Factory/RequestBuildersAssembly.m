@@ -15,13 +15,9 @@
 - (id<RequestBuilder>)requestBuilder {
     return [TyphoonDefinition withClass:[CommonRequestBuilder class] configuration:^(TyphoonDefinition *definition) {
         [definition useInitializer:@selector(initWithRequestSignersFactory:) parameters:^(TyphoonMethod *initializer) {
-            [initializer injectParameterWith:[self requestSignersFactory]];
+            [initializer injectParameterWith:self.requestSignersFactory];
         }];
     }];
-}
-
-- (id<RequestSignersFactory>)requestSignersFactory {
-    return [TyphoonDefinition withClass:[RequestSignersAssembly class]];
 }
 
 @end

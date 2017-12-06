@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Place;
 
 @protocol PlaceSearchInteractorOutput <NSObject>
-
+- (void)didReceivePlaces:(NSArray<Place *> *)places;
+- (void)failedToGetPlacesWithError:(NSError *)error;
 @end
