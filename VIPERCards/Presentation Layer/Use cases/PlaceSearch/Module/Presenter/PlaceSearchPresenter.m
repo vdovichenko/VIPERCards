@@ -37,9 +37,17 @@
 #pragma mark - PlaceSearchInteractorOutput
 
 - (void)didReceivePlaces:(NSArray<Place *> *)places {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.view hideSpinner];
+        [self.view configureWithPlaces:places];
+    });
 }
 
 - (void)failedToGetPlacesWithError:(NSError *)error {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.view hideSpinner];
+        [self.view showAlertWithTitle:@"Places" message:@"Failed to load places info"];
+    });
 }
 
 @end

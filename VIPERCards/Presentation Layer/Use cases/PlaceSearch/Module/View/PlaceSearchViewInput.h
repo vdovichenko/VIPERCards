@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Place;
 
 @protocol PlaceSearchViewInput <NSObject>
 - (void)setupInitialState;
 - (void)showSpinner;
 - (void)hideSpinner;
+- (void)showAlertWithTitle:(NSString *)title message:(NSString *)message;
+- (void)configureWithPlaces:(NSArray<Place *> *)places;
 @end
